@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - MJU gradMS</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -15,9 +15,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>`
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("MJU GradMS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -32,9 +32,17 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+
+        <div class="center-block">
+            <footer>
+                <address>
+                    <strong>&copy; @DateTime.Now.Year - MJU GradMS</strong><br />
+                    บัณฑิตวิทยาลัย มหาวิทยาลัยแม่โจ้ ชั้น 1 อาคารเทพศาสตร์สถิตย์<br />
+                    63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290
+                </address>
+            </footer>
+
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
